@@ -1,5 +1,6 @@
 {
   "name": "bs-patchinko",
+  "description": "Bucklescript bindings for patchinko state patching library",
   "version": "0.1.0",
   "scripts": {
     "clean": "bsb -clean-world",
@@ -7,7 +8,11 @@
     "watch": "bsb -make-world -w"
   },
   "keywords": [
-    "BuckleScript"
+    "BuckleScript",
+    "patchinko",
+    "state",
+    "patching",
+    "patch"
   ],
   "author": "",
   "license": "MIT",
