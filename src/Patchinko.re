@@ -9,21 +9,20 @@ module Overload = {
   type t;
 };
 
-/* [@bs.module "patchinko"] */
 /* patch */
-[@bs.send] external p: target => Patch.t = "P";
+[@bs.module "patchinko"] external p: target => Patch.t = "P";
 
 /* scope */
-[@bs.send] external s: target => Scope.t = "S";
+[@bs.module "patchinko"] external s: target => Scope.t = "S";
 
 /* patch and scope */
-[@bs.send] external ps: target => Patch.t = "PS";
+[@bs.module "patchinko"] external ps: target => Patch.t = "PS";
 
 /* delete */
-[@bs.send] external del: target => unit = "D";
+[@bs.module "patchinko"] external del: target => unit = "D";
 
 /* overload */
-[@bs.send] external ov: target => Overload.t = "constant";
+[@bs.module "patchinko"] external ov: target => Overload.t = "constant";
 
 /* immutable */
-[@bs.send] external im: target => Overload.t = "immutable";
+[@bs.module "patchinko"] external im: target => Overload.t = "immutable";
