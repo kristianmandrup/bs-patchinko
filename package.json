@@ -14,18 +14,29 @@
     "patching",
     "patch"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/kristianmandrup/bs-patchinko.git"
+  },
+  "homepage": "https://gitlab.com/kristianmandrup/bs-patchinko",
+  "bugs": {
+    "url": "https://gitlab.com/kristianmandrup/bs-patchinko/issues"
+  },
   "files": [
     "src/Patchinko.re",
     "bsconfig.json"
   ],
   "author": "Kristian Mandrup",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "patchinko": "^4.1.0"
   },
   "devDependencies": {
     "bs-platform": "^4.0.18",
     "jest": "^23.6.0",
     "@glennsl/bs-jest": "^0.4.6"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -1,4 +1,3 @@
-type target;
 module Scope = {
   type t;
 };
@@ -10,19 +9,19 @@ module Overload = {
 };
 
 /* patch */
-[@bs.module "patchinko"] external p: target => Patch.t = "P";
+[@bs.module "patchinko"] external p: 'a => Patch.t = "P";
 
 /* scope */
-[@bs.module "patchinko"] external s: target => Scope.t = "S";
+[@bs.module "patchinko"] external s: 'a => Scope.t = "S";
 
 /* patch and scope */
-[@bs.module "patchinko"] external ps: target => Patch.t = "PS";
+[@bs.module "patchinko"] external ps: 'a => Patch.t = "PS";
 
 /* delete */
-[@bs.module "patchinko"] external del: target => unit = "D";
+[@bs.module "patchinko"] external del: 'a => unit = "D";
 
 /* overload */
-[@bs.module "patchinko"] external ov: target => Overload.t = "constant";
+[@bs.module "patchinko"] external ov: 'a => Overload.t = "constant";
 
 /* immutable */
-[@bs.module "patchinko"] external im: target => Overload.t = "immutable";
+[@bs.module "patchinko"] external im: 'a => Overload.t = "immutable";
